@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770FEC8B17C3AD340073355F /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770FEC8A17C3AD340073355F /* AddViewController.m */; };
 		7742515B17BDFD6900BF8E77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7742515A17BDFD6900BF8E77 /* UIKit.framework */; };
 		7742515D17BDFD6900BF8E77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7742515C17BDFD6900BF8E77 /* Foundation.framework */; };
 		7742515F17BDFD6900BF8E77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7742515E17BDFD6900BF8E77 /* CoreGraphics.framework */; };
@@ -18,9 +19,18 @@
 		7742517117BDFD6900BF8E77 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7742517017BDFD6900BF8E77 /* Default-568h@2x.png */; };
 		7742517417BDFD6900BF8E77 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7742517217BDFD6900BF8E77 /* MainStoryboard.storyboard */; };
 		7742517717BDFD6900BF8E77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742517617BDFD6900BF8E77 /* ViewController.m */; };
+		7742517F17BE075700BF8E77 /* MainFilmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742517E17BE075700BF8E77 /* MainFilmCell.m */; };
+		7742518317BE0C0D00BF8E77 /* 28-star.png in Resources */ = {isa = PBXBuildFile; fileRef = 7742518117BE0C0D00BF8E77 /* 28-star.png */; };
+		7742518417BE0C0D00BF8E77 /* 43-film-roll.png in Resources */ = {isa = PBXBuildFile; fileRef = 7742518217BE0C0D00BF8E77 /* 43-film-roll.png */; };
+		7742518717BE14C100BF8E77 /* Films.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7742518517BE14C100BF8E77 /* Films.xcdatamodeld */; };
+		7742518A17BE15E300BF8E77 /* MainFilms.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742518917BE15E300BF8E77 /* MainFilms.m */; };
+		7742519017BE177400BF8E77 /* DetailFilmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742518F17BE177400BF8E77 /* DetailFilmViewController.m */; };
+		7742519217BE1DCE00BF8E77 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7742519117BE1DCE00BF8E77 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		770FEC8917C3AD340073355F /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		770FEC8A17C3AD340073355F /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 		7742515717BDFD6900BF8E77 /* CinemaViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7742515A17BDFD6900BF8E77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7742515C17BDFD6900BF8E77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +47,16 @@
 		7742517317BDFD6900BF8E77 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7742517517BDFD6900BF8E77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7742517617BDFD6900BF8E77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7742517D17BE075700BF8E77 /* MainFilmCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFilmCell.h; sourceTree = "<group>"; };
+		7742517E17BE075700BF8E77 /* MainFilmCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFilmCell.m; sourceTree = "<group>"; };
+		7742518117BE0C0D00BF8E77 /* 28-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "28-star.png"; sourceTree = "<group>"; };
+		7742518217BE0C0D00BF8E77 /* 43-film-roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "43-film-roll.png"; sourceTree = "<group>"; };
+		7742518617BE14C100BF8E77 /* Films.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Films.xcdatamodel; sourceTree = "<group>"; };
+		7742518817BE15E300BF8E77 /* MainFilms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFilms.h; sourceTree = "<group>"; };
+		7742518917BE15E300BF8E77 /* MainFilms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFilms.m; sourceTree = "<group>"; };
+		7742518E17BE177400BF8E77 /* DetailFilmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailFilmViewController.h; sourceTree = "<group>"; };
+		7742518F17BE177400BF8E77 /* DetailFilmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailFilmViewController.m; sourceTree = "<group>"; };
+		7742519117BE1DCE00BF8E77 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7742519217BE1DCE00BF8E77 /* CoreData.framework in Frameworks */,
 				7742515B17BDFD6900BF8E77 /* UIKit.framework in Frameworks */,
 				7742515D17BDFD6900BF8E77 /* Foundation.framework in Frameworks */,
 				7742515F17BDFD6900BF8E77 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +94,7 @@
 		7742515917BDFD6900BF8E77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7742519117BE1DCE00BF8E77 /* CoreData.framework */,
 				7742515A17BDFD6900BF8E77 /* UIKit.framework */,
 				7742515C17BDFD6900BF8E77 /* Foundation.framework */,
 				7742515E17BDFD6900BF8E77 /* CoreGraphics.framework */,
@@ -88,6 +110,15 @@
 				7742517217BDFD6900BF8E77 /* MainStoryboard.storyboard */,
 				7742517517BDFD6900BF8E77 /* ViewController.h */,
 				7742517617BDFD6900BF8E77 /* ViewController.m */,
+				7742518E17BE177400BF8E77 /* DetailFilmViewController.h */,
+				7742518F17BE177400BF8E77 /* DetailFilmViewController.m */,
+				770FEC8917C3AD340073355F /* AddViewController.h */,
+				770FEC8A17C3AD340073355F /* AddViewController.m */,
+				7742518817BE15E300BF8E77 /* MainFilms.h */,
+				7742518917BE15E300BF8E77 /* MainFilms.m */,
+				7742517D17BE075700BF8E77 /* MainFilmCell.h */,
+				7742517E17BE075700BF8E77 /* MainFilmCell.m */,
+				7742518517BE14C100BF8E77 /* Films.xcdatamodeld */,
 				7742516117BDFD6900BF8E77 /* Supporting Files */,
 			);
 			path = CinemaViewer;
@@ -96,6 +127,7 @@
 		7742516117BDFD6900BF8E77 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7742518017BE0C0D00BF8E77 /* Resources */,
 				7742516217BDFD6900BF8E77 /* CinemaViewer-Info.plist */,
 				7742516317BDFD6900BF8E77 /* InfoPlist.strings */,
 				7742516617BDFD6900BF8E77 /* main.m */,
@@ -105,6 +137,15 @@
 				7742517017BDFD6900BF8E77 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7742518017BE0C0D00BF8E77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7742518117BE0C0D00BF8E77 /* 28-star.png */,
+				7742518217BE0C0D00BF8E77 /* 43-film-roll.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +204,8 @@
 				7742516F17BDFD6900BF8E77 /* Default@2x.png in Resources */,
 				7742517117BDFD6900BF8E77 /* Default-568h@2x.png in Resources */,
 				7742517417BDFD6900BF8E77 /* MainStoryboard.storyboard in Resources */,
+				7742518317BE0C0D00BF8E77 /* 28-star.png in Resources */,
+				7742518417BE0C0D00BF8E77 /* 43-film-roll.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +219,11 @@
 				7742516717BDFD6900BF8E77 /* main.m in Sources */,
 				7742516B17BDFD6900BF8E77 /* AppDelegate.m in Sources */,
 				7742517717BDFD6900BF8E77 /* ViewController.m in Sources */,
+				7742517F17BE075700BF8E77 /* MainFilmCell.m in Sources */,
+				7742518717BE14C100BF8E77 /* Films.xcdatamodeld in Sources */,
+				7742518A17BE15E300BF8E77 /* MainFilms.m in Sources */,
+				7742519017BE177400BF8E77 /* DetailFilmViewController.m in Sources */,
+				770FEC8B17C3AD340073355F /* AddViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +346,22 @@
 				7742517C17BDFD6900BF8E77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7742518517BE14C100BF8E77 /* Films.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7742518617BE14C100BF8E77 /* Films.xcdatamodel */,
+			);
+			currentVersion = 7742518617BE14C100BF8E77 /* Films.xcdatamodel */;
+			path = Films.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7742514F17BDFD6900BF8E77 /* Project object */;
 }

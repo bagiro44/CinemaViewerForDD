@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+@private
+    NSFetchedResultsController *fetchedResultsController;
+    NSManagedObjectContext *managedObjectContext;
+}
+@property (weak, nonatomic) IBOutlet UITableView *TableView;
+- (IBAction)addFilmInDB:(id)sender;
+
+
+@property (strong, nonatomic) NSArray *_FilmContent;
+
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 
 @end
+
+
