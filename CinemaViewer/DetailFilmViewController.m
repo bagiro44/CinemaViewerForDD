@@ -7,7 +7,6 @@
 //
 
 #import "DetailFilmViewController.h"
-#import "AppDelegate.h"
 
 @interface DetailFilmViewController ()
 
@@ -15,31 +14,18 @@
 
 @implementation DetailFilmViewController
 
-@synthesize FilmTitle;
-@synthesize FilmGenre;
-@synthesize FilmDescription;
-
-
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    FilmTitle.text = _stringgg;
-    //FilmGenre.text = @"helloooooo";
-    
-}
-
-- (void) setFilmForDetail:(MainFilms *)filmForDetail
-{
-    _filmForDetail = filmForDetail;
-    NSLog(@"fff %@", filmForDetail.title);
-}
-
-
-- (void) setStringgg:(NSString *)stringgg
-{
-    _stringgg = stringgg;
-    NSLog(@"fff %@", _stringgg);
 }
 
 @end

@@ -4,7 +4,7 @@
         <attribute name="descriptionFilm" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="favorites" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="genre" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="year" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
     </entity>
     <elements>

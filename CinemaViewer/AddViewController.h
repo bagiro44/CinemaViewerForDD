@@ -11,16 +11,12 @@
 #import "MainFilms.h"
 
 @interface AddViewController : UIViewController
-<UITextFieldDelegate>
 {
     @private
     MainFilms *films;
+    
 }
 
 @property (nonatomic, strong) MainFilms *films;
-@property (nonatomic, strong) IBOutlet UITextField *titleTextField;
-
-
-- (void)saveFilm;
 
 @end

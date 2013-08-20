@@ -11,20 +11,16 @@
 #import "ViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-{
-    
-    NSManagedObjectModel *managedObjectModel;
-    NSManagedObjectContext *managedObjectContext;
-    NSPersistentStoreCoordinator *persistentStoreCoordinator;
-	
-    UITabBarController *tabBarController;
-    //ViewController *filmListController;
-}
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
-@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+- (void)saveContext;
+- (NSURL *)applicationDocumentsDirectory;
+
+
+
 @end
