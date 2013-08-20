@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		770FEC8B17C3AD340073355F /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770FEC8A17C3AD340073355F /* AddViewController.m */; };
+		770FEC8E17C3F9FF0073355F /* CinemaClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 770FEC8D17C3F9FF0073355F /* CinemaClient.m */; };
 		7742515B17BDFD6900BF8E77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7742515A17BDFD6900BF8E77 /* UIKit.framework */; };
 		7742515D17BDFD6900BF8E77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7742515C17BDFD6900BF8E77 /* Foundation.framework */; };
 		7742515F17BDFD6900BF8E77 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7742515E17BDFD6900BF8E77 /* CoreGraphics.framework */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		770FEC8917C3AD340073355F /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
 		770FEC8A17C3AD340073355F /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		770FEC8C17C3F9FF0073355F /* CinemaClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinemaClient.h; sourceTree = "<group>"; };
+		770FEC8D17C3F9FF0073355F /* CinemaClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinemaClient.m; sourceTree = "<group>"; };
 		7742515717BDFD6900BF8E77 /* CinemaViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemaViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7742515A17BDFD6900BF8E77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7742515C17BDFD6900BF8E77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,11 +117,13 @@
 				7742518F17BE177400BF8E77 /* DetailFilmViewController.m */,
 				770FEC8917C3AD340073355F /* AddViewController.h */,
 				770FEC8A17C3AD340073355F /* AddViewController.m */,
-				7742518817BE15E300BF8E77 /* MainFilms.h */,
-				7742518917BE15E300BF8E77 /* MainFilms.m */,
 				7742517D17BE075700BF8E77 /* MainFilmCell.h */,
 				7742517E17BE075700BF8E77 /* MainFilmCell.m */,
 				7742518517BE14C100BF8E77 /* Films.xcdatamodeld */,
+				770FEC8C17C3F9FF0073355F /* CinemaClient.h */,
+				770FEC8D17C3F9FF0073355F /* CinemaClient.m */,
+				7742518817BE15E300BF8E77 /* MainFilms.h */,
+				7742518917BE15E300BF8E77 /* MainFilms.m */,
 				7742516117BDFD6900BF8E77 /* Supporting Files */,
 			);
 			path = CinemaViewer;
@@ -224,6 +229,7 @@
 				7742518A17BE15E300BF8E77 /* MainFilms.m in Sources */,
 				7742519017BE177400BF8E77 /* DetailFilmViewController.m in Sources */,
 				770FEC8B17C3AD340073355F /* AddViewController.m in Sources */,
+				770FEC8E17C3F9FF0073355F /* CinemaClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

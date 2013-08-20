@@ -11,6 +11,7 @@
 #import "MainFilms.h"
 #import "AddViewController.h"
 #import <CoreData/CoreData.h>
+#import "AppDelegate.h"
 
 
 
@@ -35,14 +36,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSInteger numberOfRows = 0;
+    /*NSInteger numberOfRows = 0;
 	
     if ([[fetchedResultsController sections] count] > 0) {
         id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedResultsController sections] objectAtIndex:section];
         numberOfRows = [sectionInfo numberOfObjects];
     }
     
-    return numberOfRows;
+    return numberOfRows;*/
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

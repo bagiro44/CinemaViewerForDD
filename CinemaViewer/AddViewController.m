@@ -7,6 +7,9 @@
 //
 
 #import "AddViewController.h"
+#import "DetailFilmViewController.h"
+#import "MainFilms.h"
+#import "CinemaClient.h"
 
 @interface AddViewController ()
 
@@ -14,6 +17,7 @@
 
 @implementation AddViewController
 
+@synthesize titleTextField;
 @synthesize films;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -28,20 +32,47 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [titleTextField becomeFirstResponder];
 	// Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+	if (textField == self.titleTextField)
+    {
+		[textField resignFirstResponder];
+		[self saveFilm];
+	}
+	return YES;
 }
 
-- (void) setFilms:(int *)films
+- (void) saveFilm
 {
+    NSError *error = nil;
     
-    
+    films.title = self.titleTextField.text;
+    if (![films.managedObjectContext save:&error])
+    {
+        NSLog(@"Error in AddViewController #1 %@", [error localizedDescription]);
+    }
 }
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    MainFilms *film = [NSEntityDescription insertNewObjectForEntityForName:@"Films" inManagedObjectContext:mach_msg(<#mach_msg_header_t *msg#>, <#mach_msg_option_t option#>, <#mach_msg_size_t send_size#>, <#mach_msg_size_t rcv_size#>, <#mach_port_name_t rcv_name#>, <#mach_msg_timeout_t timeout#>, <#mach_port_name_t notify#>)];
+    film.title = @"tttt";
+    [[CinemaClient sharedInstance] addFilmInDB:film];
+    NSLog(@"%@", [segue sourceViewController]);
+    NSLog(@"%@", [segue destinationViewController]);
+    NSLog(@"%@", [segue identifier]);
+    
+    if ([[segue identifier] isEqualToString:@"savefilm"])
+    {
+        [segue.destinationViewController setStringgg:@"hellllooo"];
+    }
+
+    
+}
 
 @end

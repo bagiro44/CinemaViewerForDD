@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-
+#import "MainFilms.h"
 
 @interface MainFilms : NSManagedObject
 
@@ -17,5 +17,6 @@
 @property (nonatomic, retain) NSString * genre;
 @property (nonatomic, retain) NSString * descriptionFilm;
 @property (nonatomic, retain) NSNumber * favorites;
+
 
 @end
