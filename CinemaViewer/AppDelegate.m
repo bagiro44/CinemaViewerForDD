@@ -12,6 +12,9 @@
 
 @implementation AppDelegate
 
+@synthesize managedObjectContext;
+@synthesize managedObjectModel;
+@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
