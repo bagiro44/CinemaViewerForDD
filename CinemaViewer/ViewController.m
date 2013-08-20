@@ -10,7 +10,7 @@
 #import "MainFilmCell.h"
 #import "MainFilms.h"
 #import "AddViewController.h"
-#import <CoreData/CoreData.h>
+//#import <CoreData/CoreData.h>
 
 
 
@@ -71,7 +71,7 @@
     
     MainFilms *item = [filmToView objectAtIndex:indexPath.row];
 	cell.FilmTitle.text = item.title;
-    cell.FilmYear.text = [item.year stringValue];// [NSString stringWithString:@"%d", item.year];
+    cell.FilmYear.text = [item.year stringValue];
     
 }
 
@@ -89,4 +89,5 @@
 - (IBAction)addFilmInDB:(id)sender
 {
 }
+
 @end

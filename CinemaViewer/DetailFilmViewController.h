@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
+#import "MainFilms.h"
 
 @interface DetailFilmViewController : UIViewController
+
+@property (weak, nonatomic) MainFilms *film;
+
+@property (nonatomic, strong, readonly) NSManagedObjectContext *context;
+
 @property (weak, nonatomic) IBOutlet UITextView *FilmDescription;
 @property (weak, nonatomic) IBOutlet UILabel *FilmGenre;
 @property (weak, nonatomic) IBOutlet UILabel *Year;

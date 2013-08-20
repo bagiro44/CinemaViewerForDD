@@ -30,30 +30,28 @@
          landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "No"
+         shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398721412.470659"
+         timestampString = "398732204.214302"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "15"
-         endingLineNumber = "15"
-         landmarkName = "@interface AddViewController()"
-         landmarkType = "2">
+         startingLineNumber = "16"
+         endingLineNumber = "16"
+         landmarkName = "@implementation AddViewController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.h"
-         timestampString = "398716383.348292"
+         timestampString = "398732204.214302"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "24"
-         endingLineNumber = "24"
-         landmarkName = "-saveFilm"
-         landmarkType = "4">
+         startingLineNumber = "20"
+         endingLineNumber = "20">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -73,91 +71,77 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398725067.672514"
+         timestampString = "398732204.214302"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "63"
-         endingLineNumber = "63"
-         landmarkName = "-prepareForSegue:sender:"
-         landmarkType = "5">
+         startingLineNumber = "73"
+         endingLineNumber = "73">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398725067.672514"
+         timestampString = "398732204.214302"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "64"
-         endingLineNumber = "64"
-         landmarkName = "-prepareForSegue:sender:"
-         landmarkType = "5">
+         startingLineNumber = "74"
+         endingLineNumber = "74">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398725067.672514"
+         timestampString = "398732204.214302"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "43"
-         endingLineNumber = "43"
-         landmarkName = "-saveFilm"
-         landmarkType = "5">
+         startingLineNumber = "53"
+         endingLineNumber = "53">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398725067.672514"
+         timestampString = "398732204.214302"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "44"
-         endingLineNumber = "44"
-         landmarkName = "-saveFilm"
-         landmarkType = "5">
+         startingLineNumber = "54"
+         endingLineNumber = "54">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398725067.672514"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "48"
-         endingLineNumber = "48"
-         landmarkName = "-saveFilm"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398725067.672514"
+         timestampString = "398732204.214302"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "58"
-         endingLineNumber = "58"
-         landmarkName = "-prepareForSegue:sender:"
-         landmarkType = "5">
+         endingLineNumber = "58">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398725067.672514"
+         timestampString = "398732204.214302"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "59"
-         endingLineNumber = "59"
-         landmarkName = "-prepareForSegue:sender:"
-         landmarkType = "5">
+         startingLineNumber = "68"
+         endingLineNumber = "68">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "CinemaViewer/AddViewController.m"
+         timestampString = "398732204.214302"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "69"
+         endingLineNumber = "69">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"

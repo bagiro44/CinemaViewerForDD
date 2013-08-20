@@ -10,13 +10,9 @@
 #import <CoreData/CoreData.h>
 #import "MainFilms.h"
 
-@interface AddViewController : UIViewController
-{
-    @private
-    MainFilms *films;
-    
-}
+@interface AddViewController : UIViewController <UITextFieldDelegate>
 
-@property (nonatomic, strong) MainFilms *films;
+@property (nonatomic, strong, readonly) NSManagedObjectContext *context;
+@property (weak, nonatomic) IBOutlet UITextField *filmTitle;
 
 @end

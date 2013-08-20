@@ -7,14 +7,20 @@
 //
 
 #import "AddViewController.h"
+#import "AppDelegate.h"
 
 @interface AddViewController ()
 
 @end
 
 @implementation AddViewController
+@synthesize context;
 
-@synthesize films;
+- (void) setContext:(NSManagedObjectContext *)_context
+{
+    context = _context;
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,19 +29,23 @@
         // Custom initialization
     }
     return self;
+    
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [self setContext:delegate.managedObjectContext];
+    [self.filmTitle becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
 
 
 @end

@@ -13,6 +13,13 @@
 @end
 
 @implementation DetailFilmViewController
+@synthesize context;
+
+- (void) setContext:(NSManagedObjectContext *)_context
+{
+    context = _context;
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +33,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [self setContext:delegate.managedObjectContext];
 }
+
+
+/*- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[sender identifier] isEqual: @"toDetailView"])
+    {
+        [segue.destinationViewController ];
+    }
+}*/
+
 
 @end
