@@ -56,6 +56,21 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    /*if ([segue.identifier isEqualToString:@"AddPlayer"])
+    {
+        UINavigationController *navigationController =
+        segue.destinationViewController;
+        PlayerDetailsViewController
+        *playerDetailsViewController =
+        [[navigationController viewControllers]
+         objectAtIndex:0];
+        playerDetailsViewController.delegate = self;
+    }*/
+    NSLog(@"%@", segue.identifier);
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];

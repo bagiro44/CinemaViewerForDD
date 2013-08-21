@@ -10,6 +10,8 @@
 
 @implementation MainFilmCell
 
+
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -26,4 +28,9 @@
     // Configure the view for the selected state
 }
 
+
+- (IBAction)addFav:(id)sender
+{
+    NSLog(@"%ld", (long)self.indexPath.row );
+}
 @end

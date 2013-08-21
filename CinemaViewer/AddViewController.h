@@ -12,7 +12,10 @@
 
 @interface AddViewController : UIViewController <UITextFieldDelegate>
 
+@property (strong, nonatomic) UIWindow *window;
+
 @property (nonatomic, strong, readonly) NSManagedObjectContext *context;
 @property (weak, nonatomic) IBOutlet UITextField *filmTitle;
+- (IBAction)addFilm:(id)sender;
 
 @end
