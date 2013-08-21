@@ -13,13 +13,16 @@
 @end
 
 @implementation DetailFilmViewController
-@synthesize context;
+@synthesize context, film;
 
 - (void) setContext:(NSManagedObjectContext *)_context
 {
     context = _context;
 }
-
+- (void) setFilm:(MainFilms *)_film
+{
+    film = _film;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,6 +38,10 @@
     [super viewDidLoad];
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [self setContext:delegate.managedObjectContext];
+    self.FilmTitle.text = film.title;
+    self.FilmGenre.text = film.title;
+    NSLog(@"а я передал =) %@", film.title);
+    
 }
 
 

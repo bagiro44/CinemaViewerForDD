@@ -8,6 +8,7 @@
 
 #import "AddViewController.h"
 #import "AppDelegate.h"
+#import "DetailFilmViewController.h"
 
 @interface AddViewController ()
 
@@ -47,5 +48,17 @@
 }
 
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString: @"Detail"])
+    {
+        MainFilms *filmToAdd = [NSEntityDescription insertNewObjectForEntityForName:@"MainFilms" inManagedObjectContext:context];
+        filmToAdd.title = self.filmTitle.text;
+        [segue.destinationViewController setFilm:filmToAdd];
+    }
+}
 
+
+- (IBAction)saveButton:(id)sender {
+}
 @end
