@@ -54,19 +54,13 @@
 {
     if ([[segue identifier] isEqualToString: @"Detail"])
     {
-        MainFilms *film = [NSEntityDescription insertNewObjectForEntityForName:@"MainFilms" inManagedObjectContext:context];
-        if (film != nil)
-        {
-            film.title = self.filmTitle.text;
-            film.favorites = [NSNumber numberWithBool:NO];
-        }
-        NSError *error;
-        [context save:&error];
-        [segue.destinationViewController setFilm:film];
+        MainFilms *filmToAdd = [NSEntityDescription insertNewObjectForEntityForName:@"MainFilms" inManagedObjectContext:context];
+        filmToAdd.title = self.filmTitle.text;
+        [segue.destinationViewController setFilm:filmToAdd];
     }
 }
 
-- (IBAction)addFilm:(id)sender
-{
+
+- (IBAction)saveButton:(id)sender {
 }
 @end

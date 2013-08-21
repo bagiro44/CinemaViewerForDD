@@ -27,7 +27,6 @@
 		7742519017BE177400BF8E77 /* DetailFilmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742518F17BE177400BF8E77 /* DetailFilmViewController.m */; };
 		7742519217BE1DCE00BF8E77 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7742519117BE1DCE00BF8E77 /* CoreData.framework */; };
 		775E368C17C4D69400A51123 /* EditViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775E368B17C4D69400A51123 /* EditViewViewController.m */; };
-		775E368E17C4E34F00A51123 /* fav.png in Resources */ = {isa = PBXBuildFile; fileRef = 775E368D17C4E34F00A51123 /* fav.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +60,6 @@
 		7742519117BE1DCE00BF8E77 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		775E368A17C4D69400A51123 /* EditViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewViewController.h; sourceTree = "<group>"; };
 		775E368B17C4D69400A51123 /* EditViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewViewController.m; sourceTree = "<group>"; };
-		775E368D17C4E34F00A51123 /* fav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fav.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +147,6 @@
 		7742518017BE0C0D00BF8E77 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				775E368D17C4E34F00A51123 /* fav.png */,
 				7742518117BE0C0D00BF8E77 /* 28-star.png */,
 				7742518217BE0C0D00BF8E77 /* 43-film-roll.png */,
 			);
@@ -214,7 +211,6 @@
 				7742517417BDFD6900BF8E77 /* MainStoryboard.storyboard in Resources */,
 				7742518317BE0C0D00BF8E77 /* 28-star.png in Resources */,
 				7742518417BE0C0D00BF8E77 /* 43-film-roll.png in Resources */,
-				775E368E17C4E34F00A51123 /* fav.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

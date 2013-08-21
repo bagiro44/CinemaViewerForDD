@@ -34,9 +34,18 @@
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [self setContext:delegate.managedObjectContext];
     //NSManagedObjectContext* context = delegate.managedObjectContext;
+    MainFilms *film = [NSEntityDescription insertNewObjectForEntityForName:@"MainFilms" inManagedObjectContext:context];
+    if (film != nil)
+    {
+        film.title = @"форсаж";
+        film.year = [NSNumber numberWithInt:2013];
+        film.descriptionFilm = @"Description of this film is empty";
+        film.favorites = [NSNumber numberWithBool:YES];
+        film.genre = @"horoor";
+    }
+    NSError *error;
     
-    //[self.TableView reloadData];
-    
+    [context save:&error];
     filmToView = [self readFilmsDB];
     
     
@@ -44,6 +53,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    
     return [filmToView count];
 }
 
@@ -53,7 +63,8 @@
     
     MainFilmCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     cell.indexPath = indexPath;
-    [self configureCell:cell atIndexPath:indexPath];    
+    [self configureCell:cell atIndexPath:indexPath];
+    [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 - (void)configureCell:(MainFilmCell *)cell atIndexPath:(NSIndexPath *)indexPath
@@ -62,7 +73,7 @@
     MainFilms *item = [filmToView objectAtIndex:indexPath.row];
 	cell.FilmTitle.text = item.title;
     cell.FilmYear.text = [item.year stringValue];
-    NSLog(@"----- %ld", (long)cell.indexPath.row);
+    
 }
 
 - (NSArray *) readFilmsDB
@@ -79,6 +90,5 @@
 - (IBAction)addFilmInDB:(id)sender
 {
 }
-
 
 @end
