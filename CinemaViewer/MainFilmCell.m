@@ -19,18 +19,25 @@
         // Initialization code
     }
     return self;
+    
+    NSLog(@"%ld", (long)self.indexPath.row );
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+/*- (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
-}
+}*/
 
+- (void) setIndexPath:(NSIndexPath *)indexPathe
+{
+    self.indexPath = indexPathe;
+    //NSLog(@"%ld", (long)self.indexPath.row);
+}
 
 - (IBAction)addFav:(id)sender
 {
-    NSLog(@"%ld", (long)self.indexPath.row );
+    //NSLog(@"%ld %@ %@", (long)self.indexPath.row, self.FilmTitle.text, self.FilmYear.text );
 }
 @end

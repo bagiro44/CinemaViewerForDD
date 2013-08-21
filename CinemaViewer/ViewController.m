@@ -52,7 +52,8 @@
     static NSString *cellId = @"CinemaMainCell";
     
     MainFilmCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    [self configureCell:cell atIndexPath:indexPath];
+    cell.indexPath = indexPath;
+    [self configureCell:cell atIndexPath:indexPath];    
     return cell;
 }
 - (void)configureCell:(MainFilmCell *)cell atIndexPath:(NSIndexPath *)indexPath
@@ -61,14 +62,7 @@
     MainFilms *item = [filmToView objectAtIndex:indexPath.row];
 	cell.FilmTitle.text = item.title;
     cell.FilmYear.text = [item.year stringValue];
-    //cell.indexPath = indexPath;
-}
-
-
-- (void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
-{
-    
-    NSLog(@"testttt");
+    NSLog(@"----- %ld", (long)cell.indexPath.row);
 }
 
 - (NSArray *) readFilmsDB
