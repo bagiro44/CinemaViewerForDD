@@ -36,22 +36,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [self setContext:delegate.managedObjectContext];
+    
     self.FilmTitle.text = film.title;
-    self.FilmGenre.text = film.title;
-    NSLog(@"а я передал =) %@", film.title);
+    self.FilmGenre.text = film.title;//film.genre;
+    self.Year.text = film.title;//[film.year stringValue];
+    self.FilmDescription.text = film.title;//film.descriptionFilm;
+    
+    NSLog(@"success %@", film.title);
     
 }
 
 
-/*- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[sender identifier] isEqual: @"toDetailView"])
+    if ([[segue identifier] isEqualToString: @"detailToEdit"])
     {
-        [segue.destinationViewController ];
+        [segue.destinationViewController setFilm:film];
+        //[segue.destinationViewController setContext:context];
     }
-}*/
+}
 
 
 @end

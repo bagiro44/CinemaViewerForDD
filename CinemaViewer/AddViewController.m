@@ -37,8 +37,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [self setContext:delegate.managedObjectContext];
+    
     [self.filmTitle becomeFirstResponder];
 }
 

@@ -71,77 +71,77 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398733921.281705"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "86"
-         endingLineNumber = "86">
+         startingLineNumber = "88"
+         endingLineNumber = "88">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398733921.281705"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "87"
-         endingLineNumber = "87">
+         startingLineNumber = "89"
+         endingLineNumber = "89">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398733921.281705"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "66"
-         endingLineNumber = "66">
+         startingLineNumber = "68"
+         endingLineNumber = "68">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398733921.281705"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "67"
-         endingLineNumber = "67">
+         startingLineNumber = "69"
+         endingLineNumber = "69">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398733921.281705"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "71"
-         endingLineNumber = "71">
+         startingLineNumber = "73"
+         endingLineNumber = "73">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398733921.281705"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "81"
-         endingLineNumber = "81">
+         startingLineNumber = "83"
+         endingLineNumber = "83">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398733921.281705"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "82"
-         endingLineNumber = "82">
+         startingLineNumber = "84"
+         endingLineNumber = "84">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -200,11 +200,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398733664.995985"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "57"
-         endingLineNumber = "57"
+         startingLineNumber = "59"
+         endingLineNumber = "59"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -213,11 +213,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398733683.214435"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "51"
-         endingLineNumber = "51"
+         startingLineNumber = "53"
+         endingLineNumber = "53"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -226,11 +226,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398733685.086708"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "45"
-         endingLineNumber = "45"
+         startingLineNumber = "47"
+         endingLineNumber = "47"
          landmarkName = "-didReceiveMemoryWarning"
          landmarkType = "5">
       </FileBreakpoint>
@@ -265,11 +265,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398734802.724375"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "54"
-         endingLineNumber = "54"
+         startingLineNumber = "56"
+         endingLineNumber = "56"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -278,11 +278,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398733790.53298"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "53"
-         endingLineNumber = "53"
+         startingLineNumber = "55"
+         endingLineNumber = "55"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -291,11 +291,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/AddViewController.m"
-         timestampString = "398734802.724375"
+         timestampString = "398773786.18784"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "54"
-         endingLineNumber = "54"
+         startingLineNumber = "56"
+         endingLineNumber = "56"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -311,16 +311,29 @@
          endingLineNumber = "10">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "CinemaViewer/DetailFilmViewController.m"
-         timestampString = "398735025.959132"
+         timestampString = "398776811.543912"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "41"
-         endingLineNumber = "41"
+         startingLineNumber = "43"
+         endingLineNumber = "43"
          landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "CinemaViewer/EditViewViewController.m"
+         timestampString = "398777585.423833"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
+         landmarkName = "-textFieldShouldReturn:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

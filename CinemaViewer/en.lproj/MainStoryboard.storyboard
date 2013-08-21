@@ -215,77 +215,157 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f5r-lU-S5P">
-                                <rect key="frame" x="76" y="151" width="280" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Year" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jer-yJ-ms9">
-                                <rect key="frame" x="20" y="225" width="42" height="21"/>
+                                <rect key="frame" x="20" y="225" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Genre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MHr-pP-6td">
-                                <rect key="frame" x="166" y="225" width="100" height="21"/>
+                                <rect key="frame" x="193" y="225" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Жанр:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qS2-Gu-OVf">
-                                <rect key="frame" x="105" y="225" width="64" height="21"/>
+                                <rect key="frame" x="138" y="225" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="F6i-Cg-QJQ">
-                                <rect key="frame" x="17" y="254" width="290" height="201"/>
+                                <rect key="frame" x="10" y="254" width="300" height="201"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="FIlm titlte" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2lu-Rl-p5B">
+                                <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="e3w-XU-Pl6">
+                                <rect key="frame" x="20" y="58" width="280" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cbW-pm-1Px">
-                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="tdh-Oc-GyX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="tdh-Oc-GyX">
                             <connections>
-                                <segue destination="Tzm-8n-1OD" kind="push" id="bC3-Ks-IT8"/>
+                                <segue destination="Tzm-8n-1OD" kind="modal" identifier="detailToEdit" id="fuP-rK-rgv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="FilmDescription" destination="F6i-Cg-QJQ" id="Ngg-RO-7tb"/>
                         <outlet property="FilmGenre" destination="MHr-pP-6td" id="CdQ-aO-hCT"/>
-                        <outlet property="FilmTitle" destination="f5r-lU-S5P" id="G9i-8r-WiT"/>
+                        <outlet property="FilmTitle" destination="2lu-Rl-p5B" id="v6F-nd-87j"/>
                         <outlet property="Year" destination="Jer-yJ-ms9" id="ekL-zl-PaU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gds-h6-Ifi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="-488"/>
+            <point key="canvasLocation" x="918" y="-16"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit View View Controller-->
         <scene sceneID="4Xs-aN-36y">
             <objects>
-                <viewController id="Tzm-8n-1OD" sceneMemberID="viewController">
+                <viewController id="Tzm-8n-1OD" customClass="EditViewViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vfv-jf-KII">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="phx-p9-RnM">
+                                <rect key="frame" x="10" y="294" width="300" height="294"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Tzm-8n-1OD" id="3fB-8Y-T64"/>
+                                </connections>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="sDH-e0-EwU">
+                                <rect key="frame" x="20" y="64" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Tzm-8n-1OD" id="JxO-QQ-0wk"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ncF-eA-1yV">
+                                <rect key="frame" x="17" y="269" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Tzm-8n-1OD" id="Of8-Dr-UxJ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Жанр:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HfK-ba-qqH">
+                                <rect key="frame" x="138" y="269" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="U1E-CB-biu">
+                                <rect key="frame" x="200" y="269" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Tzm-8n-1OD" id="qRU-jV-fqL"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="b2r-q0-jm3">
+                                <rect key="frame" x="20" y="102" width="280" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" id="ZzP-Ug-gUG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Редактирование" id="yIe-OD-m9C">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="undo" id="hla-LC-NIf">
+                                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="0.089999999999999997" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="cancelEdit:" destination="Tzm-8n-1OD" id="5Ri-lp-xcC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="dCF-Gi-pXs">
+                                            <connections>
+                                                <action selector="saveEdit:" destination="Tzm-8n-1OD" id="7pw-a3-byS"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Kni-7d-2tX"/>
+                    <connections>
+                        <outlet property="filmDescription" destination="phx-p9-RnM" id="Mer-hr-SBv"/>
+                        <outlet property="filmGenre" destination="U1E-CB-biu" id="Tu9-y1-43a"/>
+                        <outlet property="filmScreen" destination="b2r-q0-jm3" id="2eS-gw-W0y"/>
+                        <outlet property="filmTitle" destination="sDH-e0-EwU" id="EX0-P5-a2p"/>
+                        <outlet property="filmYear" destination="ncF-eA-1yV" id="T1B-bM-bhW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UFT-xe-Ejz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1379" y="-488"/>
+            <point key="canvasLocation" x="1463" y="-16"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BWt-a5-tC9">
@@ -346,6 +426,18 @@
                 <relationship kind="outlet" name="Year" candidateClass="UILabel"/>
             </relationships>
         </class>
+        <class className="EditViewViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditViewViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelEdit:"/>
+                <relationship kind="action" name="saveEdit:"/>
+                <relationship kind="outlet" name="filmDescription" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="filmGenre" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="filmScreen" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="filmTitle" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="filmYear" candidateClass="UITextField"/>
+            </relationships>
+        </class>
         <class className="MainFilmCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainFilmCell.h"/>
             <relationships>
@@ -368,6 +460,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="xfZ-6e-uXx"/>
+        <segue reference="Iio-ka-jdK"/>
     </inferredMetricsTieBreakers>
 </document>
