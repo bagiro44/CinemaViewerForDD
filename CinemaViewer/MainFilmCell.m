@@ -7,10 +7,11 @@
 //
 
 #import "MainFilmCell.h"
+#import "ViewController.h"
 
 @implementation MainFilmCell
 
-@synthesize indexPath;
+@synthesize indexPath, films, context;
 
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -20,8 +21,6 @@
         // Initialization code
     }
     return self;
-    
-    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
@@ -34,6 +33,22 @@
 
 - (IBAction)addFav:(id)sender
 {
-    NSLog(@"%ld", (long)self.indexPath.row );
+    if ([films.favorites isEqual:[NSNumber numberWithBool:YES]])
+    {
+        self.films.favorites = [NSNumber numberWithBool:NO];
+        UIImage *favOnImage = [UIImage imageNamed:@"fav.png"];
+        [self.favButton setBackgroundImage:favOnImage forState:UIControlStateNormal];
+    }else
+    {
+        self.films.favorites = [NSNumber numberWithBool:YES];
+        UIImage *favOnImage = [UIImage imageNamed:@"43-film-roll.png"];
+        [self.favButton setBackgroundImage:favOnImage forState:UIControlStateNormal];
+    }
+    
+    //ViewController *delegate = (ViewController *)[[UIApplication sharedApplication] delegate];
+    //[delegate.TableView reloadData];
+    
+    NSError *error;
+    [context save:&error];
 }
 @end

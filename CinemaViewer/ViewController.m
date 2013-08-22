@@ -29,23 +29,23 @@
 
 - (void)viewDidLoad
 {
+    //[self.TableView reloadData];
     [super viewDidLoad];
     self.navigationItem.title =  @"Фильмотека";
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [self setContext:delegate.managedObjectContext];
-    //NSManagedObjectContext* context = delegate.managedObjectContext;
-    MainFilms *film = [NSEntityDescription insertNewObjectForEntityForName:@"MainFilms" inManagedObjectContext:context];
+    NSManagedObjectContext* context = delegate.managedObjectContext;
+    /*MainFilms *film = [NSEntityDescription insertNewObjectForEntityForName:@"MainFilms" inManagedObjectContext:context];
     if (film != nil)
     {
         film.title = @"форсаж";
         film.year = [NSNumber numberWithInt:2013];
         film.descriptionFilm = @"Description of this film is empty";
-        film.favorites = [NSNumber numberWithBool:YES];
+        film.favorites = [NSNumber numberWithBool:NO];
         film.genre = @"horoor";
     }
     NSError *error;
-    
-    [context save:&error];
+    [context save:&error];*/
     filmToView = [self readFilmsDB];
     
     
@@ -64,15 +64,24 @@
     MainFilmCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     cell.indexPath = indexPath;
     [self configureCell:cell atIndexPath:indexPath];
-    [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 - (void)configureCell:(MainFilmCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    
+    [cell setContext:context];
     MainFilms *item = [filmToView objectAtIndex:indexPath.row];
+    cell.films = item;
 	cell.FilmTitle.text = item.title;
     cell.FilmYear.text = [item.year stringValue];
+    if ([item.favorites isEqual:[NSNumber numberWithBool:YES]])
+    {
+        UIImage *favOnImage = [UIImage imageNamed:@"fav"];
+        [cell.favButton setBackgroundImage:favOnImage forState:UIControlStateNormal];
+    }else
+    {
+        UIImage *favOnImage = [UIImage imageNamed:@"43-film-roll"];
+        [cell.favButton setBackgroundImage:favOnImage forState:UIControlStateNormal];
+    }
     
 }
 
@@ -87,8 +96,28 @@
     films = [self.context executeFetchRequest:fetchRequest error:&error];
     return films;
 }
+
+- (NSArray *) readFavoriteFilmsDB
+{
+    NSArray *films = nil;
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    [fetchRequest setEntity:[NSEntityDescription entityForName:@"MainFilms" inManagedObjectContext:context]];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"favorite == %@", @"1"];
+    [fetchRequest setPredicate:predicate];
+    NSError *error;
+    films = [self.context executeFetchRequest:fetchRequest error:&error];
+    return films;
+    
+}
+
 - (IBAction)addFilmInDB:(id)sender
 {
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.TableView reloadData];
+}
 @end

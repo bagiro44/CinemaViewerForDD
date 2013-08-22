@@ -18,6 +18,8 @@
 //@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 
 - (IBAction)addFilmInDB:(id)sender;
+- (NSArray *) readFavoriteFilmsDB;
+- (NSArray *) readFilmsDB;
 
 
 @end
