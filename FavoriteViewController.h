@@ -7,7 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "MainFilms.h"
+#import "MainFilmCell.h"
 
 @interface FavoriteViewController : ViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property NSArray *favoriteFilms;
+@property (nonatomic, strong, readonly) NSManagedObjectContext *context;
 
 @end

@@ -16,6 +16,11 @@
 
 @synthesize context, film;
 
+- (void) setFilm:(MainFilms *)_film
+{
+    film = _film;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -60,5 +65,16 @@
 {
     [textField resignFirstResponder];
     return YES;
+}
+
+- (BOOL) textFieldShouldEndEditing:(UITextField *)textField
+{
+    if (textField == self.filmTitle)
+    {
+        self.film.title = textField.text;
+        NSLog(@"%@", self.film.title);
+    } else {
+        NSLog(@"f");
+    }
 }
 @end

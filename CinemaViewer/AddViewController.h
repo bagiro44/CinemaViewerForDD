@@ -14,5 +14,7 @@
 
 @property (nonatomic, strong, readonly) NSManagedObjectContext *context;
 @property (weak, nonatomic) IBOutlet UITextField *filmTitle;
+- (IBAction)ddd:(id)sender;
+
 
 @end

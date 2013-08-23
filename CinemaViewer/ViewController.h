@@ -20,7 +20,7 @@
 - (IBAction)addFilmInDB:(id)sender;
 - (NSArray *) readFavoriteFilmsDB;
 - (NSArray *) readFilmsDB;
-
+- (void) setContext:(NSManagedObjectContext *)_context;
 
 @end
 

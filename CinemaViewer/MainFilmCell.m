@@ -35,20 +35,20 @@
 {
     if ([films.favorites isEqual:[NSNumber numberWithBool:YES]])
     {
+        //UIImage *favOnImage = [UIImage imageNamed:@"28-star"];
+        //[self.favButton setBackgroundImage:favOnImage forState:UIControlStateNormal];
         self.films.favorites = [NSNumber numberWithBool:NO];
-        UIImage *favOnImage = [UIImage imageNamed:@"fav.png"];
-        [self.favButton setBackgroundImage:favOnImage forState:UIControlStateNormal];
     }else
     {
+        //UIImage *favOnImage = [UIImage imageNamed:@"fav.png"];
+        //[self.favButton setBackgroundImage:favOnImage forState:UIControlStateNormal];
         self.films.favorites = [NSNumber numberWithBool:YES];
-        UIImage *favOnImage = [UIImage imageNamed:@"43-film-roll.png"];
-        [self.favButton setBackgroundImage:favOnImage forState:UIControlStateNormal];
     }
-    
-    //ViewController *delegate = (ViewController *)[[UIApplication sharedApplication] delegate];
-    //[delegate.TableView reloadData];
-    
+
     NSError *error;
     [context save:&error];
+    
+    ViewController *viewController = [[ViewController alloc] init];
+    [viewController.TableView reloadData];
 }
 @end

@@ -29,7 +29,6 @@
 
 - (void)viewDidLoad
 {
-    //[self.TableView reloadData];
     [super viewDidLoad];
     self.navigationItem.title =  @"Фильмотека";
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -79,7 +78,7 @@
         [cell.favButton setBackgroundImage:favOnImage forState:UIControlStateNormal];
     }else
     {
-        UIImage *favOnImage = [UIImage imageNamed:@"43-film-roll"];
+        UIImage *favOnImage = [UIImage imageNamed:@"28-star"];
         [cell.favButton setBackgroundImage:favOnImage forState:UIControlStateNormal];
     }
     
@@ -103,7 +102,7 @@
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     [fetchRequest setEntity:[NSEntityDescription entityForName:@"MainFilms" inManagedObjectContext:context]];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"favorite == %@", @"1"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"favorites == %@", @"1"];
     [fetchRequest setPredicate:predicate];
     NSError *error;
     films = [self.context executeFetchRequest:fetchRequest error:&error];
@@ -117,7 +116,6 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
-    [self.TableView reloadData];
+    //[self.TableView reloadData];
 }
 @end

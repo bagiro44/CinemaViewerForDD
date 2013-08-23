@@ -30,8 +30,6 @@
         // Custom initialization
     }
     return self;
-    
-    
 }
 
 - (void)viewDidLoad
@@ -52,17 +50,27 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString: @"Detail"])
+    if ([[segue identifier] isEqualToString: @"addDetail"])
     {
         MainFilms *filmToAdd = [NSEntityDescription insertNewObjectForEntityForName:@"MainFilms" inManagedObjectContext:context];
         filmToAdd.title = self.filmTitle.text;
         [segue.destinationViewController setFilm:filmToAdd];
+        NSError *error;
+        [context save:&error];
     }
 }
 
 
-- (IBAction)saveButton:(id)sender
+- (IBAction)ddd:(id)sender
 {
+    UINavigationController *navController = self.navigationController;
+    [navController popViewControllerAnimated:NO];
+    //[navController popToRootViewControllerAnimated:YES];
     
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle: nil];
+    DetailFilmViewController *lvc = [storyboard instantiateViewControllerWithIdentifier:@"ViewControllerDetail"];
+
+    [navController pushViewController:lvc animated:YES];
+
 }
 @end

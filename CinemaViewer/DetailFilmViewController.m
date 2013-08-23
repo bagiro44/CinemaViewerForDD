@@ -41,10 +41,9 @@
     [self setContext:delegate.managedObjectContext];
     
     self.FilmTitle.text = film.title;
-    self.FilmGenre.text = film.title;//film.genre;
-    self.Year.text = film.title;//[film.year stringValue];
-    self.FilmDescription.text = film.title;//film.descriptionFilm;
-    
+    self.FilmGenre.text = film.title;
+    self.Year.text = film.title;
+    self.FilmDescription.text = film.title;    
     NSLog(@"success %@", film.title);
     
 }
