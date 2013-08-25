@@ -47,8 +47,6 @@
 
     NSError *error;
     [context save:&error];
-    
-    ViewController *viewController = [[ViewController alloc] init];
-    [viewController.TableView reloadData];
+    //[viewController.TableView reloadData];
 }
 @end

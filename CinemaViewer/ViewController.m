@@ -20,7 +20,7 @@
 
 
 @implementation ViewController
-@synthesize context, filmToView;
+@synthesize context, filmToView, TableView;
 
 - (void) setContext:(NSManagedObjectContext *)_context
 {
@@ -33,7 +33,7 @@
     self.navigationItem.title =  @"Фильмотека";
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [self setContext:delegate.managedObjectContext];
-    NSManagedObjectContext* context = delegate.managedObjectContext;
+    NSManagedObjectContext *context = delegate.managedObjectContext;
     /*MainFilms *film = [NSEntityDescription insertNewObjectForEntityForName:@"MainFilms" inManagedObjectContext:context];
     if (film != nil)
     {
@@ -59,10 +59,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellId = @"CinemaMainCell";
+    MainFilmCell *cell;
     
-    MainFilmCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    cell.indexPath = indexPath;
-    [self configureCell:cell atIndexPath:indexPath];
+        cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+        cell.indexPath = indexPath;
+        [self configureCell:cell atIndexPath:indexPath];
+    
+    
+    
     return cell;
 }
 - (void)configureCell:(MainFilmCell *)cell atIndexPath:(NSIndexPath *)indexPath
@@ -82,6 +86,11 @@
         [cell.favButton setBackgroundImage:favOnImage forState:UIControlStateNormal];
     }
     
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (NSArray *) readFilmsDB
@@ -112,10 +121,11 @@
 
 - (IBAction)addFilmInDB:(id)sender
 {
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    //[self.TableView reloadData];
+    [TableView reloadData];
 }
 @end
